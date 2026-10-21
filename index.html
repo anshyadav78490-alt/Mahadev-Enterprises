@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f97316"><meta name="description" content="Mahadev Enterprise — second-hand phones, mobile accessories and repair services in Nangloi, Delhi.">
+<title>Mahadev Enterprise | Phones, Accessories & Repairs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-icon">▣</span><span>MAHADEV <small>ENTERPRISE</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="nav"><a href="#phones">Used Phones</a><a href="#accessories">Accessories</a><a href="#repairs">Repairs</a><a href="#pickup">Shop Location</a><button class="cart-button" id="openCart">Cart <b id="cartCount">0</b></button></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">YOUR LOCAL MOBILE SHOP</p><h1>Smart deals.<br><span>Mahadev trust.</span></h1><p>Second-hand phones, everyday mobile accessories and repair services — all in one place in Nangloi.</p><div class="hero-actions"><a class="btn primary" href="#phones">Explore products</a><a class="btn light" href="#pickup">Find our shop</a></div><div class="trust-row"><span>✓ Shop pickup</span><span>✓ WhatsApp orders</span><span>✓ Clear prices</span></div></div>
+  <div class="hero-art" aria-label="Illustration of a mobile phone"><div class="orange-orb"></div><div class="phone"><div class="phone-camera"></div><div class="screen"><div class="screen-brand">MAHADEV</div><div class="screen-mark">▣</div><div class="screen-caption">SMART<br>CHOICES</div></div></div><div class="float-tag">Phones • Accessories • Repairs</div></div>
+</section>
+<section class="notice"><strong>Pickup from our shop</strong><span>Order online, then collect from Mahadev Enterprise. Home delivery is not currently offered.</span></section>
+<section class="section" id="phones"><div class="section-heading"><div><p class="eyebrow">PRE-OWNED PICKS</p><h2>Second-hand phones</h2></div><p>Each phone should list its own condition, photos and price.</p></div><div class="products" id="phoneProducts"></div></section>
+<section class="section tint" id="accessories"><div class="section-heading"><div><p class="eyebrow">DAILY ESSENTIALS</p><h2>Mobile accessories</h2></div><p>Useful extras for charging, listening and protection.</p></div><div class="products" id="accessoryProducts"></div></section>
+<section class="section" id="repairs"><div class="section-heading"><div><p class="eyebrow">REPAIR SUPPORT</p><h2>Mobile repair services</h2></div><p>Contact the shop to confirm the repair and estimate before visiting.</p></div><div class="service-grid"><article class="service"><span>▣</span><h3>Display replacement</h3><p>Ask about your phone model and display availability.</p><button class="text-button" data-service="Display replacement">Ask on WhatsApp ↗</button></article><article class="service"><span>⌁</span><h3>Charging & battery</h3><p>Charging-port and battery inspection enquiries.</p><button class="text-button" data-service="Charging and battery repair">Ask on WhatsApp ↗</button></article><article class="service"><span>⚙</span><h3>Other repairs</h3><p>Tell us the phone model and problem for an estimate.</p><button class="text-button" data-service="Other mobile repair">Ask on WhatsApp ↗</button></article></div></section>
+<section class="pickup" id="pickup"><div><p class="eyebrow">VISIT THE SHOP</p><h2>Mahadev Enterprise</h2><p>Block E-1, Block C, Shivram Park,<br>Nangloi, Delhi – 110041</p><p class="hours"><strong>Open daily</strong><br>10:00 AM – 9:00 PM</p><div class="hero-actions"><a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mahadev+Enterprise+Block+E-1+Block+C+Shivram+Park+Nangloi+Delhi+110041">Get directions</a><a class="btn light" href="#" id="shopWhatsapp">WhatsApp the shop</a></div></div><div class="pickup-card"><div class="map-pin">⌖</div><h3>Shop pickup only</h3><p>Place an order online and collect it at the shop. Please confirm availability before travelling.</p><p class="small">Hours and address are provided by the shop owner; verify they are correct before publishing.</p></div></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-icon">▣</span><span>MAHADEV <small>ENTERPRISE</small></span></a><p>Local mobile solutions in Nangloi, Delhi.</p><p class="small">Sample catalogue images are illustrations, not photos of actual stock. Replace demo products and prices before publishing.</p><p>© <span id="year"></span> Mahadev Enterprise</p></footer>
+<div class="drawer-backdrop" id="backdrop"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-head"><h2>Your cart</h2><button id="closeCart" class="icon-button" aria-label="Close cart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><div class="checkout"><h3>Pickup checkout</h3><p class="small">Demo checkout: no payment is collected and orders are not stored in a secure database yet.</p><label>Your name<input id="customerName" placeholder="Full name"></label><label>Phone number<input id="customerPhone" inputmode="tel" placeholder="10-digit phone number"></label><label>Payment preference<select id="paymentMethod"><option>Pay at shop — Cash</option><option>Pay at shop — UPI</option></select></label><button class="btn primary full" id="checkoutBtn">Prepare WhatsApp order</button><p class="small">Phone login with SMS OTP, online UPI and saved orders require backend/payment setup before launch.</p></div></aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
